@@ -13,5 +13,18 @@ namespace ToDoFormsPCL
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(usuarioEntry.Text) || string.IsNullOrEmpty(passwordEntry.Text))
+            {
+                resultadoLabel.Text = "Debe ingresar un usuario y password";
+            }
+            else
+            {
+                resultadoLabel.Text = "Inicio de sesion exitoso";
+                await Navigation.PushAsync(new ListaTareas());
+            }
+        }
     }
 }

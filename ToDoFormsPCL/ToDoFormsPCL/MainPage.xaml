@@ -4,8 +4,21 @@
              xmlns:local="clr-namespace:ToDoFormsPCL"
              x:Class="ToDoFormsPCL.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout VerticalOptions="Center"
+                 Margin="20">
 
+        <Entry x:Name="usuarioEntry"
+               Placeholder="Ingresa tu usuario"></Entry>
+
+        <Entry x:Name="passwordEntry"
+               Placeholder="Ingresa tu clave"
+               IsPassword="True"></Entry>
+
+        <Button Text="Iniciar sesión"
+                Clicked="Button_Clicked"></Button>
+
+        <Label x:Name="resultadoLabel"
+               HorizontalOptions="Center"></Label>
+
+    </StackLayout>
 </ContentPage>

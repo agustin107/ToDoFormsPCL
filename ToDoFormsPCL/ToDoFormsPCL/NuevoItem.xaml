@@ -15,9 +15,9 @@
 
         <Entry x:Name="nombreEntry" Placeholder="Nombre de la tarea" Grid.ColumnSpan="2"></Entry>
 
-        <DatePicker Grid.Row="1"></DatePicker>
+        <DatePicker Grid.Row="1" x:Name="fechaLimiteDatePicker"></DatePicker>
 
-        <TimePicker Grid.Row="1" Grid.Column="1"></TimePicker>
+        <TimePicker Grid.Row="1" Grid.Column="1" x:Name="horaLimiteTimePicker"></TimePicker>
 
         <Button Text="Guardar" Grid.Row="2" Grid.ColumnSpan="2" Clicked="Button_Clicked"></Button>
         

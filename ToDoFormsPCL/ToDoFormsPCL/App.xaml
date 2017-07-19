@@ -6,5 +6,15 @@
 
 		<!-- Application resource dictionary -->
 
+        <ResourceDictionary>
+            <Color x:Key="accentColor">#293275</Color>
+            <Color x:Key="buttonTextColor">#FFFFFF</Color>
+
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource accentColor}"
+            </Style>
+            
+        </ResourceDictionary>
+
 	</Application.Resources>
 </Application>
